@@ -144,6 +144,7 @@ while len(name) == 0:
 print("hello! "+name)
 '''
 
+'''
 #for loop in python = a statement that will execute it's block of code a limited amount of times
 #while loop = unlimted
 #for loop = limited
@@ -162,6 +163,9 @@ for seconds in range(10,0,-1):
     print(seconds)
     time.sleep(1)
 print ("Happy new year!")
+'''
+#Nested loops
+
 
 
     
