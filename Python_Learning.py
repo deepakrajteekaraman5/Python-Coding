@@ -164,18 +164,138 @@ for seconds in range(10,0,-1):
     time.sleep(1)
 print ("Happy new year!")
 '''
-#Nested loops
 
+'''
+#Nested loops = the inner loop will finish all of the iterartions before finsihing one iteraton of outer loop
+rows = int(input("How many rows?:"))
+coulmns = int(input("how many coulmns?:"))
+symbol = input("symbol")
 
+for i in range(rows):
+    for j in range(coulmns):
+        print(symbol, end="") #will end and won't got to next line
+  print() #to print in the next line
 
-    
+''' 
+'''
+#Loop control statements = change a loops execution from it's normal sequence
+#break = used to terminate the loop entirely
+#continue = skips to the next iteration of the loop
+#pass = does nothing, acts as a placeholder
 
+while True:
+    name = input("name?")
+      if name!= "":
+        break
 
+phone_number = "123-456-7890"
 
+for i in phone_number:
+   if i == "-":
+       continue
+    print(i, end="")
 
+for i in range (1,20):
 
+    if i ==13:
+        pass
+    else:
+        print(i,end="")
 
+''' 
+'''
+#List = used to store multiple items in a single variable
 
+food = ["pizza","doner","Ham"]
 
+food [0] = "Briyani"
 
+food.append("icecream")
+food.remove("Ham")
+food.pop() #will remove last element
+food.insert(0,"cake")
+food.sort() #sort list alphabetically
+food.clear() #will remove all the elements
 
+for x in food:
+    print (x)
+
+'''
+
+'''
+#2D lists = a list of lists
+
+drinks = ["coffee","soda","tea"]
+dinner = ["pizza","briyani"]
+dessert = ["cake","icecream"]
+
+food = [drinks,dinner,dessert]
+
+print(food[0][1])
+
+'''
+
+'''
+#Tuples = collection which is ordered and unchangable, used to group together related data
+
+student = ("john",21,"male")
+
+print(student.count("john"))
+print(student.index("male"))
+
+for x in student:
+    print(x)
+
+if "john" in student:
+    print("john is here")
+
+'''
+
+'''
+#set = collection which is unordered, unindexed, no duplicate values, faster than lists
+
+utensils = {"fork","spoon","knife"}
+dishes={"bowl","plate","cup","spoon"}
+
+utensils.update(dishes)
+
+utensils.add("napkin")
+utensils.remove("spoon")
+utensils.clear
+
+dinner_table = utensils.union(dishes)
+
+print(utensils.difference(dishes)) #will check for differences
+utensils.intersection(dishes) #will return common element
+
+for x in dinner_table:
+    print(x)
+
+'''
+
+'''
+#Dictionary = a changable, unordered collection of unique key:value pairs, fast because they use hashing, allow us to access a value quickly
+
+capitals = {'USA' : 'DC', 'india':'delhi', 'germany':'berlin'}
+print(capitals['USA'])
+
+capitals.update({'france':'paris'})
+capitals.update({'USA':'Vegas'})
+capitals.pop('germany')
+
+#print(capitals.get['germany'])
+print(capitals.keys())
+print(capitals.values())
+print(capitals.items())
+
+'''
+
+#index operator [] = gives access to a sequence's elemnt (str,list,tuples)
+
+name = "Deepak raj"
+
+if (name[0].islower()):
+    name = name.capitalize()
+
+first_name = name[0:3].upper()
+print(first_name)
